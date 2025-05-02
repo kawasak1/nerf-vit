@@ -46,7 +46,7 @@ nerf-vit/
 ## Working directory
 
 ```bash
-cd nerf-bit
+cd nerf-vit
 ```
 
 ## Training
