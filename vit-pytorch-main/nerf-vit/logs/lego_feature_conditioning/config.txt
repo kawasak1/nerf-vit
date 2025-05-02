@@ -1,0 +1,43 @@
+expname = nerf_vit
+datadir = ../data/lego
+basedir = ./logs
+
+# Use view directions
+use_viewdirs = True
+
+# Model parameters
+netdepth = 8
+netwidth = 256
+netdepth_fine = 8
+netwidth_fine = 256
+
+# ViT parameters
+vit_dim = 384
+vit_depth = 6
+vit_heads = 8
+image_size = 224
+
+# Transformer-NeRF specific parameters
+transformer_depth = 2
+num_heads = 4
+
+# Rendering parameters
+N_samples = 64
+N_importance = 128
+perturb = 1.0
+white_bkgd = True
+half_res = True
+
+# Training parameters
+N_rand = 1024
+lrate = 5e-4
+lrate_decay = 250
+i_print = 100
+i_weights = 10000
+i_video = 50000
+i_testset = 50000
+
+# Dataset parameters
+multires = 10
+multires_views = 4
+raw_noise_std = 0.0 

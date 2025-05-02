@@ -1,0 +1,16 @@
+# NeRF Model Comparison
+
+## Model Performance Comparison
+
+| Model Type | Average PSNR (dB) | Average SSIM | Average LPIPS |
+|------------|------------------|--------------|---------------|
+| base | 1.54 | 0.0687 | 0.5425 |
+| feature_conditioning | 1.56 | 0.0798 | 0.5222 |
+| transformer | 1.57 | 0.0777 | 0.5220 |
+
+
+Based on PSNR measurements, the **transformer** approach performs best with 1.57 dB.
+
+Based on SSIM measurements, the **feature_conditioning** approach performs best with 0.0798.
+
+Based on LPIPS measurements, the **transformer** and **feature_conditioning** approach performs best with 0.5220 (lower is better).
